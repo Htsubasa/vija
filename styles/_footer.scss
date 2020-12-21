@@ -1,0 +1,167 @@
+@import "./variable.scss";
+
+
+#footer{
+    .link_wrap{
+        display: flex;
+        width: 100%;
+        @include sp{
+            display: block;
+        }
+        .contact_link{
+            width: 50%;
+            background:linear-gradient(to top, #1C1C1C, #121212);
+            @include sp{
+                width: 100%;
+            }
+            a{
+                color: white;
+                display: block;
+                padding: 129px 133px 96px 133px;
+                @include pc{
+                    padding: 11vw 5.5vw 9vw 5.5vw;
+                }
+
+                .link_title{
+                    font-family: $font-play;
+                    font-size: 4.9em;
+                    padding-bottom: 37.5px;
+                    border-bottom: 1px solid #707070;
+                    @include sp{
+                        font-size: 3.8em;
+                        padding-bottom: 26px;
+                    }
+                    .link_jp{
+                        font-size: 16px;
+                        margin-left: 23.5px;
+                        @include pc{
+                            display: block;
+                            margin-left: 0px;
+                            margin-top: 5px;
+                        }
+                        @include sp{
+                            display: none;
+                        }
+                    }
+                }
+
+                .link_text{
+                    margin-top: 37px;
+                    font-size: 1.4em;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    @include sp{
+                        margin-top: 34px;
+                        line-height: 2.3;
+                    }
+                }
+            }/*a*/
+        }/*contact_link*/
+
+        .join_link{
+            width: 50%;
+            background:linear-gradient(to top, #121212, #1C1C1C);
+            @include sp{
+                width: 100%;
+            }
+            a{
+                display: block;
+                padding: 129px 133px 96px 133px;
+                color: white;
+                @include pc{
+                    padding: 11vw 5.5vw 9vw 5.5vw;
+                }
+                .link_title{
+                    font-family: $font-play;
+                    font-size: 4.9em;
+                    padding-bottom: 37.5px;
+                    border-bottom: 1px solid #707070;
+                    @include sp{
+                        font-size: 3.8em;
+                        padding-bottom: 26px;
+                    }
+                    .link_jp{
+                        font-size: 16px;
+                        margin-left: 23.5px;
+                        @include pc{
+                            display: block;
+                            margin-left: 0px;
+                            margin-top: 5px;
+                        }
+                        @include sp{
+                            display: none;
+                        }
+                    }
+                }
+
+                .link_text{
+                    margin-top: 37px;
+                    font-size: 1.4em;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    @include sp{
+                        margin-top: 34px;
+                        line-height: 2.3;
+                    }
+                }
+            }/*a*/
+        }/*contact_link*/
+    }/*link_wrap*/
+
+    .footer_wrap{
+        color: white;
+        padding-top: 128px;
+        padding-bottom: 125px;
+        text-align: center;
+        @include sp{
+            padding-top: 72px;
+            padding-bottom: 85px;
+        }
+        img{
+            @include tab{
+                width: 70%;
+            }
+            @include sp{
+                margin-bottom: 22.2px;
+            }
+        }
+        .address{
+            color: #999899;
+            font-size: 1.4em;
+            letter-spacing: 0.025em;
+            font-family: 'Noto Sans JP', sans-serif;
+            @include sp{
+                line-height: 1.8;
+            }
+            .sp_br{
+                display: none;
+                @include sp{
+                    display: block;
+                }
+            }
+        }
+        .footer_nav{
+            padding-top: 69px;
+            display: flex;
+            justify-content: center;
+            @include sp{
+                display: none;
+            }
+            li{
+                list-style:none;
+                border-right: 1px solid #999899;
+                &:last-child{
+                    border-right: none;
+                }
+                a{
+                    padding-right: 17px;
+                    padding-left:17px;    
+                    color:#999899;
+                    font-size: 1.4em;
+                    @include tab{
+                        font-size: 1.4vw;
+                    }
+                }/*a*/
+            }/*li*/
+        }/*footer_nav*/
+    }
+
+}/*footer*/
