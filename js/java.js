@@ -57,7 +57,7 @@ $(function () {
         },6000);
       setTimeout(function(){
         $('header ,.scroll-text ,.link-box_top').fadeIn(800).css('display','block');
-        },10000);
+        },8000);
 
       $('#is-loading').delay(1200).fadeOut(1000);
       $('#loading').delay(600).fadeOut(300);
